@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+.placeholder-image {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.placeholder-image img {
+  display: block;
+  position: relative;
+  top: -137px;
+  width: 400px;
+  margin: 0 auto;
+}
