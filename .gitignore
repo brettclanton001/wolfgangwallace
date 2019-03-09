@@ -2,3 +2,6 @@
 # OSX stuff
 .DS_Store
 
+# Logs and temp files
+tmp/*
+log/*
