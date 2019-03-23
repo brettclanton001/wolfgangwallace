@@ -12,3 +12,6 @@
 
   = link_to(Settings.social_media.facebook.url, class: 'social-media-link') do
     %i.fa.fa-facebook>
+
+  = link_to("mailto:#{Settings.contact_methods.email}", class: 'social-media-link') do
+    %i.fa.fa-envelope>
