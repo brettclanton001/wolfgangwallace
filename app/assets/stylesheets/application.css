@@ -16,6 +16,7 @@
  */
 
 body, html {
+  position: relative;
   height: 100%;
   padding: 0;
 }
@@ -46,5 +47,6 @@ body, html {
 }
 
 .wolfgang-wallace-logo {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
 }
