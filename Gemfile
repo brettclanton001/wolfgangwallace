@@ -23,6 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'haml-rails', '~> 1.0'
 gem 'font-awesome-rails'
 gem 'config'
+gem 'actionview', '>= 5.0.7.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
