@@ -1,3 +1,12 @@
 
-.placeholder-image
-  = image_tag 'wolf_blue_logo.jpg'
+.vert-center-container.site-placeholder
+
+  %div
+    = image_tag 'wolf_blue_logo.jpg', class: 'wolfgang-wallace-logo'
+
+  = link_to(Settings.social_media.soundcloud.url, class: 'social-media-link') do
+    %i.fa.fa-soundcloud>
+  = link_to(Settings.social_media.instagram.url, class: 'social-media-link') do
+    %i.fa.fa-instagram>
+  = link_to(Settings.social_media.facebook.url, class: 'social-media-link') do
+    %i.fa.fa-facebook>
