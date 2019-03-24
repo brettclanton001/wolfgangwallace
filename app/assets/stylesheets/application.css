@@ -15,35 +15,11 @@
  *= require font-awesome
  */
 
-body, html {
-  position: relative;
-  height: 100%;
-  padding: 0;
-}
 
-.vert-center-container {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-}
+/* Delete Soon */
 
 .site-placeholder {
   text-align: center;
-}
-
-.social-media-link {
-  display: inline-block;
-  width: 70px;
-  margin: 0 3px;
-  color: #232325;
-  text-decoration: none;
-  font-size: 40px;
-}
-
-.social-media-link:hover {
-  color: #7cb5d8;
 }
 
 .wolfgang-wallace-logo {
