@@ -1,1 +1,6 @@
-%h1 Videos
+%h1 Wolfgang Wallace Videos
+
+- Settings.facebook.videos.each do |video|
+  .iframe-container
+    %iframe{src: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FPlayStation%2Fvideos%2F#{video.id}%2F&show_text=0&width=560", width: '560', height: "#{if video.orientation == 'landscape' then '315' else '1000' end}", style: 'border:none;overflow:hidden', scrolling: 'no', frameborder: '0', allowTransparency: 'true', allowFullScreen: 'true'}
+
