@@ -2,6 +2,24 @@
 .sidepanel
   padding: 10px
   background-color: $grey
+  -webkit-transition: left 0.5s ease-in-out
+  transition: left 0.5s ease-in-out
+
+  .menu-button
+    display: none
+    box-sizing: border-box
+    position: absolute
+    top: 0
+    right: -60px
+    width: 60px
+    height: 47px
+    padding: 10px
+    text-align: center
+    font-size: 27px
+    cursor: pointer
+    z-index: 10
+    -webkit-transition: right 0.5s ease-in-out, color 0.5s
+    transition: right 0.5s ease-in-out, color 0.5s
 
   .navigation
     position: absolute
@@ -54,3 +72,8 @@
 
       &:hover
         background-color: darken($blue,10%)
+
+@media (max-width: $breakpoint-phone)
+  .sidepanel
+    .menu-button
+      display: block

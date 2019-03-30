@@ -1,6 +1,7 @@
 .iframe-container
   position: relative
   text-align: center
+  overflow: hidden
 
   &:before
     content: 'loading...'
@@ -10,3 +11,27 @@
     right: 0
     text-align: center
     z-index: -1
+
+@media (max-width: 550px)
+  .iframe-container.video.landscape
+    height: 260px
+  .iframe-container.video.portrait
+    height: 835px
+
+@media (max-width: 500px)
+  .iframe-container.video.landscape
+    height: 232px
+  .iframe-container.video.portrait
+    height: 750px
+
+@media (max-width: 400px)
+  .iframe-container.video.landscape
+    height: 180px
+  .iframe-container.video.portrait
+    height: 582px
+
+@media (max-width: 350px)
+  .iframe-container.video.landscape
+    height: 155px
+  .iframe-container.video.portrait
+    height: 500px

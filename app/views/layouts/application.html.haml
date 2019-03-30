@@ -9,6 +9,9 @@
   %body
 
     .sidepanel
+      .menu-button
+        %i.fa.fa-bars
+
       .navigation
         = image_tag 'ww_wolf_blue_transparent_notext.png', class: 'logo'
         = render 'nav_link', data: {path: music_path, text: 'Music'}

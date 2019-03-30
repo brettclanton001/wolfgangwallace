@@ -15,13 +15,22 @@ body
   right: auto
   bottom: 0
   width: 200px
+  z-index: 10
 
 .content
-  position: fixed
-  top: 0
-  left: 200px
-  right: 0
-  bottom: 0
-  width: auto
-  padding: 40px 20px
-  overflow: auto
+  padding: 40px 20px 40px 220px
+
+@media (max-width: $breakpoint-phone)
+  .sidepanel
+    left: -200px
+
+    &.open
+      left: 0
+
+      .menu-button
+        right: 0
+        color: $white
+
+  .content
+    padding-left: 20px
+
