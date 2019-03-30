@@ -33,6 +33,12 @@ schedule:
         url: http://www.radioroomgreenville.com/calendar/2019/4/8/the-happy-fits-and-deal-casino
       date: 2019-04-08
     - venue:
+        name: 8th State Brewing
+        address: 400 Augusta St, Greenville, SC 29601
+        address_url: https://www.google.com/maps/place/400+Augusta+St,+Greenville,+SC+29601
+        url: https://www.facebook.com/pg/eighthstatebrewing/events/
+      date: 2019-04-27
+    - venue:
         name: Radio Room
         address: 110 Poinsett Hwy, Greenville, SC 29609
         address_url: https://www.google.com/maps/place/110+Poinsett+Hwy,+Greenville,+SC+29609
