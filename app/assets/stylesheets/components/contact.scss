@@ -1,0 +1,13 @@
+.contact {
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  word-wrap: break-word;
+}
+
+@media (max-width: $breakpoint-phone) {
+  .contact {
+    padding: 40px 5px;
+    font-size: 14px;
+  }
+}

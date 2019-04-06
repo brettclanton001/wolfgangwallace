@@ -1,0 +1,31 @@
+.schedule {
+  width: 100%;
+
+  .event {
+    border-bottom: $grey solid 1px;
+
+    .venue-name, .venue-address, .date {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 20%;
+      padding: 20px;
+    }
+
+    .venue-address {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+
+  .schedule .event {
+    padding: 10px 0;
+
+    .venue-name, .venue-address, .date {
+      display: block;
+      width: auto;
+      padding: 5px;
+    }
+  }
+}

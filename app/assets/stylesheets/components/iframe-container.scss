@@ -1,0 +1,26 @@
+.iframe-container {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+
+  &:before {
+    content: 'loading...';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 630px) {
+
+  .iframe-container.video.landscape {
+    height: calc((100vw - 40px) * (319/590));
+  }
+
+  .iframe-container.video.portrait {
+    height: calc((100vw - 40px) * (1004/590));
+  }
+}
