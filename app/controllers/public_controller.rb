@@ -22,8 +22,6 @@ class PublicController < ApplicationController
   private
 
   def load_data_file(name)
-    file_path = File.join(Rails.root, 'data_files', "#{name}.yml")
-    file = File.read(file_path)
-    YAML.load(file)
+    ::DataFileService.load(name)
   end
 end

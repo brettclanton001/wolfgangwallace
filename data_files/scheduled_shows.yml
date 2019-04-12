@@ -5,6 +5,12 @@
     url: http://www.radioroomgreenville.com/calendar/2019/4/8/the-happy-fits-and-deal-casino
   date: 2019-04-08
 - venue:
+    name: Carolina Bauernhaus
+    address: 115 W. Federal Street, Anderson SC, 29625
+    address_url: https://www.google.com/maps/place/115+W.+Federal+Street,+Anderson+SC,+29625
+    url: https://carolinabauernhaus.com/
+  date: 2019-04-19
+- venue:
     name: 8th State Brewing
     address: 400 Augusta St, Greenville, SC 29601
     address_url: https://www.google.com/maps/place/400+Augusta+St,+Greenville,+SC+29601
