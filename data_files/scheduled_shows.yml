@@ -14,8 +14,13 @@
     name: 8th State Brewing
     address: 400 Augusta St, Greenville, SC 29601
     address_url: https://www.google.com/maps/place/400+Augusta+St,+Greenville,+SC+29601
-    url: https://www.facebook.com/pg/eighthstatebrewing/events/
+    url: https://www.facebook.com/events/551911451965682/
   date: 2019-04-27
+  start_time: 5:00pm
+  end_time: 11:00pm
+  other_acts:
+    - Hugger Mugger
+    - Glory
 - venue:
     name: Radio Room
     address: 110 Poinsett Hwy, Greenville, SC 29609

@@ -3,10 +3,19 @@
 .schedule
   - @scheduled_shows.each do |show|
     - if ShowService.new(show).future?
-      .event
-        .venue-name>
-          = link_to show['venue']['name'], show['venue']['url'], target: '_blank'
-        .venue-address>
-          = link_to show['venue']['address'], show['venue']['address_url'], target: '_blank'
-        .date>
-          = show['date'].strftime("%A, %B %e, %Y")
+      .event.accordion.js-accordion-section
+        .summary
+          .information
+            .venue-name>
+              = link_to show['venue']['name'], show['venue']['url'], target: '_blank'
+            .venue-address>
+              = link_to show['venue']['address'], show['venue']['address_url'], target: '_blank'
+            .date>
+              = show['date'].strftime("%A, %B %e, %Y")
+          .expand.js-accordion-trigger
+            %i.fa.fa-chevron-up.accordion-expanded-show
+            %i.fa.fa-chevron-down.accordion-collapsed-show
+        .details
+          .start-time= show['start_time']
+          .end-time= show['end_time']
+

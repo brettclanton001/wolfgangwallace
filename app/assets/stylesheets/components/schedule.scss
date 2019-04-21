@@ -4,15 +4,48 @@
   .event {
     border-bottom: $grey solid 1px;
 
-    .venue-name, .venue-address, .date {
-      box-sizing: border-box;
-      display: inline-block;
-      width: 25%;
+    .summary {
+      position: relative;
+      padding-right: 50px;
+
+      .information {
+        width: 100%;
+
+        .venue-name, .venue-address, .date {
+          box-sizing: border-box;
+          display: inline-block;
+          width: 25%;
+          padding: 20px;
+        }
+
+        .venue-address {
+          width: 50%;
+        }
+      }
+
+      .expand {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+
+    .details {
+      display: none;
       padding: 20px;
     }
 
-    .venue-address {
-      width: 50%;
+    &.expanded {
+      .details {
+        display: block;
+      }
     }
   }
 }
@@ -22,10 +55,13 @@
   .schedule .event {
     padding: 10px 0;
 
-    .venue-name, .venue-address, .date {
-      display: block;
-      width: auto;
-      padding: 5px;
+    .summary .information {
+
+      .venue-name, .venue-address, .date {
+        display: block;
+        width: auto;
+        padding: 5px;
+      }
     }
   }
 }

@@ -1,0 +1,17 @@
+.accordion {
+  .accordion-collapsed-show {
+    display: block;
+  }
+  .accordion-expanded-show {
+    display: none;
+  }
+
+  &.expanded {
+    .accordion-collapsed-show {
+      display: none;
+    }
+    .accordion-expanded-show {
+      display: block;
+    }
+  }
+}
