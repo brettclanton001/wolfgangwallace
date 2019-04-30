@@ -16,11 +16,7 @@
 
 @media (max-width: 630px) {
 
-  .iframe-container.video.landscape {
-    height: calc((100vw - 40px) * (319/590));
-  }
-
-  .iframe-container.video.portrait {
-    height: calc((100vw - 40px) * (1004/590));
+  .iframe-container.video iframe {
+    width: 90%;
   }
 }

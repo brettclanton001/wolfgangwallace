@@ -28,3 +28,13 @@
     address_url: https://www.google.com/maps/place/400+Augusta+St,+Greenville,+SC+29601
     url: https://www.facebook.com/pg/eighthstatebrewing/events/
   date: 2019-07-19
+- venue:
+    name: Slasher Prom II @ Carolina Bauernhaus
+    address: 115 W. Federal Street, Anderson SC, 29625
+    address_url: https://www.google.com/maps/place/115+W.+Federal+Street,+Anderson+SC,+29625
+    url: https://carolinabauernhaus.com/
+  date: 2019-10-26
+- venue:
+    name: Dio De Los Muertos Masquerade Murder Mystery
+  private: true
+  date: 2019-11-01

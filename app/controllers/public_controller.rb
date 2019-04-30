@@ -1,7 +1,7 @@
 class PublicController < ApplicationController
 
   def home
-    redirect_to music_path
+    redirect_to videos_path
   end
 
   def music
@@ -9,7 +9,7 @@ class PublicController < ApplicationController
   end
 
   def videos
-    @facebook_videos = load_data_file :facebook_videos
+    @youtube_videos = load_data_file :youtube_videos
   end
 
   def schedule
