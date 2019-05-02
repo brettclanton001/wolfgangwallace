@@ -12,7 +12,7 @@ class PublicController < ApplicationController
     @youtube_videos = load_data_file :youtube_videos
   end
 
-  def schedule
+  def shows
     @scheduled_shows = load_data_file :scheduled_shows
   end
 
