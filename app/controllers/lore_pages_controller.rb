@@ -1,5 +1,5 @@
 class LorePagesController < ApplicationController
-  http_basic_authenticate_with name: "wolfgang", password: "baileyishot"
+  http_basic_authenticate_with name: Settings.admin.user, password: Settings.admin.password
   before_action :set_lore_page, only: [:show, :edit, :update, :destroy]
 
   # GET /lore_pages

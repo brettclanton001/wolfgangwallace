@@ -8,3 +8,7 @@ social_media:
 
 contact_methods:
   email: contact@wolfgangwallace.com
+
+admin:
+  user: <%= ENV['ADMIN_USER'] %>
+  password: <%= ENV['ADMIN_PASSWORD'] %>
