@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   # Redirects
   get '/schedule', to: redirect('/shows')
+  get '/admin', to: redirect('/admin/lore_pages')
 
   # Main
   root to: 'public#home'
@@ -9,5 +10,10 @@ Rails.application.routes.draw do
   get '/videos', to: 'public#videos'
   get '/shows', to: 'public#shows'
   get '/contact', to: 'public#contact'
+
+  # Admin
+  scope :admin do
+    resources :lore_pages, as: :lore_pages
+  end
 
 end
