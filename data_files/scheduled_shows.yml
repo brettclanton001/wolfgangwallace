@@ -47,6 +47,12 @@
     url: https://www.facebook.com/pg/eighthstatebrewing/events/
   date: 2019-07-19
 - venue:
+    name: Ground Zero
+    address: 3052 Howard Street, Spartanburg SC 29303
+    address_url: https://www.google.com/maps/place/3052+Howard+Street,+Spartanburg+SC+29303
+    url: https://www.facebook.com/events/2105349489766344/
+  date: 2019-08-08
+- venue:
     name: Radio Room
     address: 110 Poinsett Hwy, Greenville, SC 29609
     address_url: https://www.google.com/maps/place/110+Poinsett+Hwy,+Greenville,+SC+29609
