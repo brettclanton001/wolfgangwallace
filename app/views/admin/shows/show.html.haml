@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Venue name:
+  = @admin_show.venue_name
+%p
+  %b Venue address:
+  = @admin_show.venue_address
+%p
+  %b Venue address url:
+  = @admin_show.venue_address_url
+%p
+  %b Venue url:
+  = @admin_show.venue_url
+%p
+  %b Date:
+  = @admin_show.date
+
+= link_to 'Edit', edit_admin_show_path(@admin_show)
+\|
+= link_to 'Back', admin_shows_path

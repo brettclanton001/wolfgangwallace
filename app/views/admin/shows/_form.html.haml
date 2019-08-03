@@ -1,0 +1,28 @@
+- form_url = admin_shows_url
+- form_url = admin_show_path(@admin_show) if @admin_show.id.present?
+
+= form_for @admin_show, url: form_url do |f|
+  - if @admin_show.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@admin_show.errors.count, "error")} prohibited this admin_show from being saved:"
+      %ul
+        - @admin_show.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :venue_name
+    = f.text_field :venue_name
+  .field
+    = f.label :venue_address
+    = f.text_field :venue_address
+  .field
+    = f.label :venue_address_url
+    = f.text_field :venue_address_url
+  .field
+    = f.label :venue_url
+    = f.text_field :venue_url
+  .field
+    = f.label :date
+    = f.date_select :date
+  .actions
+    = f.submit 'Save'

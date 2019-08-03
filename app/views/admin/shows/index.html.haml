@@ -1,0 +1,25 @@
+%h1 Listing Shows
+
+%table
+  %thead
+    %tr
+      %th Venue name
+      %th Venue address
+      %th Date
+      %th
+      %th
+      %th
+
+  %tbody
+    - @admin_shows.each do |admin_show|
+      %tr
+        %td= admin_show.venue_name
+        %td= admin_show.venue_address
+        %td= admin_show.date
+        %td= link_to 'Show', admin_show_path(admin_show)
+        %td= link_to 'Edit', edit_admin_show_path(admin_show)
+        %td= link_to 'Destroy', admin_show_path(admin_show), method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Show', new_admin_show_path

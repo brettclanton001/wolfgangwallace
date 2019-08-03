@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    resources :shows
+  end
   # Redirects
   get '/schedule', to: redirect('/shows')
   get '/admin', to: redirect('/admin/lore_pages')
