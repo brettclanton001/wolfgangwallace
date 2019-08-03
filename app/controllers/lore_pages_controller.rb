@@ -1,5 +1,6 @@
 class LorePagesController < ApplicationController
-  http_basic_authenticate_with name: Settings.admin.user, password: Settings.admin.password
+  before_action :authenticate_user!
+  before_action :authenticate_admin!
   before_action :set_lore_page, only: [:show, :edit, :update, :destroy]
 
   # GET /lore_pages
@@ -71,5 +72,9 @@ class LorePagesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def lore_page_params
       params.require(:lore_page).permit(:name, :slug, :body, :position)
+    end
+
+    def authenticate_admin!
+      head :unauthorized unless current_user.admin?
     end
 end

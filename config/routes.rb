@@ -16,4 +16,6 @@ Rails.application.routes.draw do
     resources :lore_pages, as: :lore_pages
   end
 
+  devise_for :users
+
 end
