@@ -16,10 +16,10 @@
         %td= lore_page.position
         %td= lore_page.name
         %td= lore_page.slug
-        %td= link_to 'Show', lore_page_path(lore_page)
-        %td= link_to 'Edit', edit_lore_page_path(lore_page)
-        %td= link_to 'Destroy', lore_page_path(lore_page), method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to 'Show', admin_lore_page_path(lore_page)
+        %td= link_to 'Edit', edit_admin_lore_page_path(lore_page)
+        %td= link_to 'Destroy', admin_lore_page_path(lore_page), method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to 'New Lore page', new_lore_page_path
+= link_to 'New Lore page', new_admin_lore_page_path

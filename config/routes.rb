@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'public#contact'
 
   # Admin
-  scope :admin do
+  namespace :admin do
     resources :lore_pages, as: :lore_pages
   end
 
