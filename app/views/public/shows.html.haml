@@ -2,18 +2,17 @@
 
 .schedule
   - @scheduled_shows.each do |show|
-    - if ShowService.new(show).future?
-      .event
-        .venue-name>
-          - if show['private']
-            = show['venue']['name']
-          - else
-            = link_to show['venue']['name'], show['venue']['url'], target: '_blank'
-        .venue-address>
-          - if show['private']
-            %i.fa.fa-lock
-            Private Show
-          - else
-            = link_to show['venue']['address'], show['venue']['address_url'], target: '_blank'
-        .date>
-          = show['date'].strftime("%A, %B %e, %Y")
+    .event
+      .venue-name>
+        - if show.private?
+          = show.venue_name
+        - else
+          = link_to show.venue_name, show.venue_url, target: '_blank'
+      .venue-address>
+        - if show.private?
+          %i.fa.fa-lock
+          Private Show
+        - else
+          = link_to show.venue_address, show.venue_address_url, target: '_blank'
+      .date>
+        = show.date.strftime("%A, %B %e, %Y")

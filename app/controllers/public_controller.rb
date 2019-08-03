@@ -13,7 +13,7 @@ class PublicController < ApplicationController
   end
 
   def shows
-    @scheduled_shows = load_data_file :scheduled_shows
+    @scheduled_shows = Show.where("date > ?", Date.yesterday).order("date ASC")
   end
 
   def contact
