@@ -1,6 +1,4 @@
 class Admin::LorePagesController < Admin::BaseController
-  before_action :authenticate_user!
-  before_action :authenticate_admin!
   before_action :set_lore_page, only: [:show, :edit, :update, :destroy]
 
   # GET /lore_pages
