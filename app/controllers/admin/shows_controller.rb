@@ -1,4 +1,4 @@
-class Admin::ShowsController < ApplicationController
+class Admin::ShowsController < Admin::BaseController
   before_action :set_admin_show, only: [:show, :edit, :update, :destroy]
 
   # GET /admin/shows
