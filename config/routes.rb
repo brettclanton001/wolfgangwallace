@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   get '/shows', to: 'public#shows'
   get '/contact', to: 'public#contact'
 
+  # Temp
+  get '/murder', to: 'public#murder'
+
   # Admin
   namespace :admin do
     resources :lore_pages, as: :lore_pages

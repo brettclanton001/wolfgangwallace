@@ -8,6 +8,11 @@ class PublicController < ApplicationController
     @soundcloud_tracks = load_data_file :soundcloud_tracks
   end
 
+  # Temp page
+  def murder
+    @soundcloud_tracks = load_data_file :murder_soundcloud_tracks
+  end
+
   def videos
     @youtube_videos = load_data_file :youtube_videos
   end
