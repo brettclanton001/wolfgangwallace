@@ -15,20 +15,29 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'rails', '~> 5.0.6'
+gem 'rails', '~> 5.2.4'
 gem 'pg', '~> 0.18'
-gem 'puma', '~> 3.12'
+gem "puma", ">= 4.3.8"
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'haml-rails', '~> 1.0'
 gem 'font-awesome-rails'
 gem 'config'
-gem 'actionview', '>= 5.0.7.2'
 gem 'devise'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+
+# security updates
+gem "activerecord", ">= 5.2.4.5"
+gem "websocket-extensions", ">= 0.1.5"
+gem "activesupport", ">= 5.2.4.3"
+gem "actionpack", ">= 5.2.4.6"
+gem "actionview", ">= 5.2.4.3"
+gem "nokogiri", ">= 1.11.4"
+gem "rack", ">= 2.1.4"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
