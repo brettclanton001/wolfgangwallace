@@ -1,16 +1,11 @@
 class PublicController < ApplicationController
 
   def home
-    redirect_to videos_path
+    redirect_to music_path
   end
 
   def music
-    @soundcloud_tracks = load_data_file :soundcloud_tracks
-  end
-
-  # Temp page
-  def murder
-    @soundcloud_tracks = load_data_file :murder_soundcloud_tracks
+    @distrokid_releases = load_data_file :distrokid_releases
   end
 
   def videos

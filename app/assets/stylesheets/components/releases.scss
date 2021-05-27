@@ -1,0 +1,36 @@
+.release {
+  padding: 20px 0;
+}
+.release:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.release-artwork {
+  width: 300px;
+  float: left;
+}
+.release-artwork img {
+  width: 300px;
+}
+.release-description {
+  min-width: 300px;
+  float: left;
+  padding: 0 20px;
+}
+.release-date {
+  color: #666; // FUCK YEAH!
+}
+.release-links {
+  padding: 20px 0;
+}
+.release-links a {
+  display: inline-block;
+  background-color: #666;
+  color: #fff;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+.release-links a:hover {
+  background-color: #000;
+}
