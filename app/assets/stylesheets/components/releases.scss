@@ -10,7 +10,10 @@
 }
 .release-artwork {
   width: 300px;
+  height: 300px;
   float: left;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .release-artwork img {
   width: 300px;
@@ -18,7 +21,7 @@
 .release-description {
   min-width: 300px;
   float: left;
-  padding: 0 20px;
+  padding: 3px 20px 0;
 }
 .release-date {
   color: #666; // FUCK YEAH!
