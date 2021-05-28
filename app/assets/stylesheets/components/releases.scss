@@ -1,6 +1,6 @@
 .release {
   padding: 20px 0;
-  max-width: 640px;
+  max-width: 660px;
   margin: 0 auto;
 }
 .release:after {
@@ -14,6 +14,7 @@
   float: left;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: rgba(0,0,0,0.3) 0px 1px 7px;
 }
 .release-artwork img {
   width: 300px;
@@ -40,6 +41,6 @@
   background-color: #000;
 }
 
-@media (max-width: 879px) {
+@media (max-width: 899px) {
   .release { max-width: 300px }
 }

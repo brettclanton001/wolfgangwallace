@@ -1,5 +1,8 @@
 %h1 Wolfgang Wallace Shows
 
+- if @scheduled_shows.length == 0
+  %p.center More Shows Coming Soon!
+
 .schedule
   - @scheduled_shows.each do |show|
     .event
