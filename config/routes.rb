@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # Redirects
   get '/schedule', to: redirect('/shows')
   get '/admin', to: redirect('/admin/shows')
+  get '/epk', to: redirect('/WolfgangWallaceEPK.pdf')
 
   # Main
   root to: 'public#home'
