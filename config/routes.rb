@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/music', to: 'public#music'
   get '/videos', to: 'public#videos'
   get '/shows', to: 'public#shows'
+  get '/press', to: 'public#press'
   get '/contact', to: 'public#contact'
 
   # Admin

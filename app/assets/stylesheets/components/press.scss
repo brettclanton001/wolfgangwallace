@@ -1,0 +1,43 @@
+
+.press {
+  padding-top: 20px;
+}
+
+a.press-article {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 20px 1px;
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,0.3) 0px 1px 7px;
+  border-radius: 10px;
+  border: 1px #fff solid;
+  color: $black;
+}
+
+a.press-article:hover {
+  box-shadow: $blue 0px 1px 15px;
+  border-color: $blue;
+}
+
+.fa.press-article-external-link {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 18px;
+  color: $blue;
+}
+
+.press-article:hover .press-article-external-link {
+  display: block;
+}
+
+.press-article .date {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: $grey;
+}

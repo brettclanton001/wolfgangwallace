@@ -16,6 +16,10 @@ class PublicController < ApplicationController
     @scheduled_shows = Show.where("date > ?", Date.yesterday).order("date ASC")
   end
 
+  def press
+    @press_articles = load_data_file :press_articles
+  end
+
   def contact
   end
 

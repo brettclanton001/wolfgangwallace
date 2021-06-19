@@ -1,0 +1,12 @@
+%h1 Wolfgang Wallace Press
+
+.press
+  - @press_articles.each do |press_article|
+    = link_to(press_article['url'], class: 'press-article', target: '_blank') do
+      %i.fa.fa-external-link.press-article-external-link
+      %h3.title= press_article['title']
+      %p.publisher-name= press_article['publisher_name']
+      %p.author
+        Written by: 
+        = press_article['author']
+      .date= press_article['date']

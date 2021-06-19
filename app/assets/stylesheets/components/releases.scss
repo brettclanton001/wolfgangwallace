@@ -1,6 +1,7 @@
 .release {
   padding: 20px 0;
-  max-width: 660px;
+  width: 660px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .release:after {
@@ -10,7 +11,8 @@
 }
 .release-artwork {
   width: 300px;
-  height: 300px;
+  height: auto;
+  max-width: 100%;
   float: left;
   border-radius: 10px;
   overflow: hidden;
@@ -18,9 +20,13 @@
 }
 .release-artwork img {
   width: 300px;
+  height: auto;
+  max-width: 100%;
 }
 .release-description {
-  min-width: 300px;
+  box-sizing: border-box;
+  width: 360px;
+  max-width: 100%;
   float: left;
   padding: 3px 20px 0;
 }
@@ -28,7 +34,8 @@
   color: #697e81;
 }
 .release-links {
-  padding: 20px 0;
+  padding: 20px 0 16px;
+  text-align: left;
 }
 .release-links a {
   display: inline-block;
@@ -36,11 +43,18 @@
   color: #fff;
   padding: 7px 13px;
   border-radius: 3px;
+  margin-bottom: 4px;
 }
 .release-links a:hover {
   background-color: #050608;
 }
 
 @media (max-width: 899px) {
-  .release { max-width: 300px }
+  .release {
+    width: 300px;
+    max-width: 100%;
+  }
+  .release-links {
+    text-align: center;
+  }
 }
