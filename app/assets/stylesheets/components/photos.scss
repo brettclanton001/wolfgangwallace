@@ -1,0 +1,24 @@
+
+a.photo {
+  display: block;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 800px;
+  padding: 0;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.3) 0px 1px 7px;
+  border: 1px $black solid;
+  line-height: 0;
+}
+
+a.photo:hover {
+  box-shadow: $blue 0px 1px 15px;
+  border-color: $blue;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}

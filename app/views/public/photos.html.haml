@@ -1,0 +1,5 @@
+%h1 Wolfgang Wallace Photos
+
+- @photos.each do |photo|
+  = link_to("/assets/photos/#{photo['filename']}", class: 'photo', target: '_blank') do
+    = image_tag "photos/#{photo['filename']}"
